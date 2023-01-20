@@ -2,7 +2,7 @@ export {domElement};
 
 const domElement = (tag, attributes, ...nested) => {
     const el = document.createElement(tag);
-    for (key in attributes) {
+    for (const key in attributes) {
         el.setAttribute(key, attributes[key]);
     }
     
@@ -13,6 +13,6 @@ const domElement = (tag, attributes, ...nested) => {
             el.appendChild(nest);
         }
     })
-
+    
     return el;
 }
