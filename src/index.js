@@ -12,12 +12,12 @@ import { domElement } from './factoryDOM';
 //object, and the objects nested beneath the tag. 
 const navbar = domElement(
         'nav',
-        { class: 'navbar navbar-expand-lg',
+        { class: 'navbar navbar-expand-lg navbar-light p-4',
         style: 'background-color: #dc2626',
         id: 'navigation'},
     domElement(
-        'h2', 
-        {class: 'navbar-brand'}),
+        'a', 
+        {class: 'navbar-brand'}, 'Go Grubbie'),
      );
 
 const navbarList = 
