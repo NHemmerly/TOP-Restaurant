@@ -1,6 +1,13 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-.navbar {
-    padding: 1rem;
+.main {
+    width: 50vw;
+    height: 50vh;
+}
+
+.background {
+    object-fit: contain;
+    width: 50vw;
+    height: 100vh;
 }

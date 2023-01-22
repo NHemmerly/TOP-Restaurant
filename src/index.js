@@ -6,6 +6,7 @@ import './scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
 import { domElement } from './factoryDOM';
+import backgroundImage from './images/pizza-home.jpg';
 
 
 //domElement takes the tag, object containing the attributes of an 
@@ -40,8 +41,20 @@ const navbarList =
             domElement('a', {class: 'nav-link'}, 'Contact')
         )
         );
-
+        
+const pizzaImage = new Image();
+pizzaImage.src = backgroundImage;
+        
+const main = domElement('div', { class: 'container-fluid main'},
+    domElement(
+        'img',
+        {class: 'img-fluid background',
+        src: backgroundImage}));
+            
+            
 navbar.appendChild(navbarList);
 document.body.appendChild(navbar);
+document.body.appendChild(main);
+
 
 console.log('hello!');
