@@ -49,7 +49,7 @@ const main = domElement('div', { class: 'row main'},
     domElement('div', {class: 'col content'},
         domElement('div', {class: 'col'},
             domElement('div', {class: 'row display-1 text-center'}, 'The Best Pizza Comes From The Brick Oven'),
-            domElement('div', {class: 'row display-3 text-center'}, 'Nobody does rustic aesthic with modern flavor quite like the brick oven.'))));
+            domElement('div', {class: 'row display-3 text-center'}, 'Nobody does rustic aesthetic with modern flavor quite like the brick oven.'))));
             
             
 navbar.appendChild(navbarList);
