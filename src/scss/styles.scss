@@ -3,7 +3,11 @@
 
 :root {
     height: 100%;
+    color: #fffbeb;
 }
+
+$font-family-base: 'Roboto', Arial, Helvetica, sans-serif;
+$display-font-weight: 700;
 
 body {
     background-color: #991b1b;
