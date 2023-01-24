@@ -3,7 +3,6 @@ import './style.css';
 import './scss/styles.scss';
 
 // Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap';
 
 import { domElement } from './factoryDOM';
 import backgroundImage from './images/pizza-home.jpg';
@@ -13,7 +12,7 @@ import backgroundImage from './images/pizza-home.jpg';
 //object, and the objects nested beneath the tag. 
 const navbar = domElement(
         'nav',
-        { class: 'navbar navbar-expand-lg navbar-light p-4',
+        { class: 'navbar navbar-expand-lg navbar-light p-4 justify-content-between',
         style: 'background-color: #dc2626',
         id: 'navigation'},
     domElement(
@@ -28,28 +27,26 @@ const navbarList =
         domElement(
             'li',
             {class: 'nav-item active'},
-            domElement('a', {class: 'nav-link'}, 'Home')
+            domElement('button', {class: 'btn btn-outline-light', id: 'home'}, 'Home')
         ),
         domElement(
             'li',
             {class: 'nav-item active'},
-            domElement('a', {class: 'nav-link'}, 'Menu')
+            domElement('button', {class: 'btn btn-outline-light', id: 'menu'}, 'Menu')
         ),
         domElement(
             'li',
             {class: 'nav-item active'},
-            domElement('a', {class: 'nav-link'}, 'Contact')
+            domElement('button', {class: 'btn btn-outline-light', id: 'contact'}, 'Contact')
         )
         );
         
 const pizzaImage = new Image();
 pizzaImage.src = backgroundImage;
         
-const main = domElement('div', { class: 'container-fluid main'},
-    domElement(
-        'img',
-        {class: 'img-fluid background',
-        src: backgroundImage}));
+const main = domElement('div', { class: 'row main'},
+    domElement('div', {class: 'col background'}),
+    domElement('div', {class: 'col content'}));
             
             
 navbar.appendChild(navbarList);
