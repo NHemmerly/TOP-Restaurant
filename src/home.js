@@ -1,8 +1,6 @@
 //Dom manipulation for home page
 import { domElement } from "./factoryDOM";
 import backgroundImage from './images/pizza-home.jpg';
-import { clearTab } from "./clearTab";
-import { renderNav } from "./nav";
 
 export function renderHome() {
     //domElement takes the tag, object containing the attributes of an 
