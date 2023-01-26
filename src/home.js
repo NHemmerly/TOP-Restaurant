@@ -1,16 +1,16 @@
 //Dom manipulation for home page
 import { domElement } from "./factoryDOM";
 import backgroundImage from './images/pizza-home.jpg';
+import { clearTab } from "./clearTab";
 import { renderNav } from "./nav";
 
 export function renderHome() {
     //domElement takes the tag, object containing the attributes of an 
-    //object, and the objects nested beneath the tag. 
-        
+    //object, and the objects nested beneath the tag.        
     const pizzaImage = new Image();
     pizzaImage.src = backgroundImage;
         
-    const main = domElement('div', {class: 'container-fluid p-0 main'}, 
+    const main = domElement('div', {class: 'container-fluid p-0 main', id: 'tab'}, 
     domElement('div', { class: 'row two-panes m-0 h-100'},
     domElement('div', {class: 'col background p-0'}),
     domElement('div', {class: 'col content d-flex align-items-center p-0'},
