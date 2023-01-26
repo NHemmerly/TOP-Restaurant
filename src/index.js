@@ -6,6 +6,4 @@ import { renderHome } from './home';
 
 renderHome();
 
-
-
 console.log('hello!');
