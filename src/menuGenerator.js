@@ -2,7 +2,7 @@ import { domElement } from './factoryDOM';
 import { menu } from './menu-text';
 
 export function generateMenu() {
-    const menuList = domElement('div', {class: 'list-holder align-self-end p-3 pt-4'});
+    const menuList = domElement('div', {class: 'list-holder align-self-end p-3 pt-4 m-3'});
     for (let i = 0; i < menu.length; i++) {
         menuList.appendChild(domElement('div', {class: 'section-title h3 text-light'}, menu[i].title));
         for (let j = 0; j < menu[i].items.length; j++) {
