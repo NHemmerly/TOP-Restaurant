@@ -4,8 +4,7 @@ import { generateMenu } from "./menuGenerator";
 import { menu } from './menu-text';
 
 export function renderMenu() {
-    const main = domElement('div', {class: 'container main', id: 'tab'},
-        domElement('div', {class: 'container menu-text', id: 'menu-text'}, generateMenu()))
+    const main = domElement('div', {class: 'd-flex flex-column container-fluid main p-0 m-0', id: 'tab'}, generateMenu())
 
     return main
 }
