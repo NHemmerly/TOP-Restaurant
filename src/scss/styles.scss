@@ -35,6 +35,7 @@ body {
 
 .main {
     height: 100%;
+    background-color: #991b1b;
 }
 
 .two-panes {
@@ -47,6 +48,17 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 879px;
+}
+
+/* Photo by <a href="https://unsplash.com/@iavnt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Torres</a> on <a href="https://unsplash.com/images/food/pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+
+.menu-background {
+    background-image: url('../images/menu-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 .content {
@@ -62,6 +74,11 @@ body {
     background-color: #991b1b;
     border: 1px solid black;
     border-radius: 20px;
+    z-index: 1;
+}
+
+.list-holder {
+    position: relative;
 }
 
 ul {
