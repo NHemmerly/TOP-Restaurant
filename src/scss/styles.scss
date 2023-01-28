@@ -54,6 +54,17 @@ body {
 
 .menu-background {
     background-image: url('../images/menu-bg.jpg');
+}
+
+/*Photo by <a href="https://unsplash.com/@brenna_lynn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brenna Huff</a> on <a href="https://unsplash.com/images/food/pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+
+.contact-background {
+    background-image: url('../images/contact-bg.jpg');
+    height: 100%;
+}
+
+.menu-background,
+.contact-background {
     background-position: center;
     background-size: cover;
     width: 100%;

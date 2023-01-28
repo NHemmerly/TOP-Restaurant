@@ -1,9 +1,9 @@
 //Module for rendering the contactTab
 import { domElement } from "./factoryDOM";
-import { clearTab } from "./clearTab";
 
 export function renderContact() {
     const contact = domElement('div', {class: 'd-flex flex-column container-fluid main p-0 m-0', id: 'tab'},
+        domElement('div', {class: 'd-flex flex-column contact-background'},
         domElement('div', {class: 'contact-holder align-self-center p-5 pt-4 m-3'}, 
             domElement('div', {class: 'contact-title h3 text-light text-center'}, 'Contact Us'),
         domElement('div', {class: 'phone-address'},
@@ -21,7 +21,10 @@ export function renderContact() {
             domElement('label', {class: 'form-label text-light mt-2', for: 'Message'}, 'Message: '),
             domElement('textarea', {id: 'Message', name: 'Message', rows: '4', cols: '50', class: 'form-control', placeholder: 'Type your message here'})),
         domElement('li', {class: 'submit-button'},
-            domElement('button', {class: 'btn btn-light mt-3', type: 'submit', id: 'contact-form'}, 'Submit Message'))))))
+            domElement('button', {class: 'btn btn-light mt-3', type: 'submit', id: 'contact-form'}, 'Submit Message')
+            )
+            )
+            ))))
     return contact;
 }
 
